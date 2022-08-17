@@ -1,0 +1,114 @@
+*,
+body,
+html {
+  font-family: "GT Walsheim Pro", sans-serif;
+  letter-spacing: normal;
+
+  --black: #a1a1a1;
+  --white-back: #fff;
+  --black-grey: #6b6969;
+  list-style: none;
+}
+
+header {
+  z-index: 5;
+  height: 100vh;
+  width: 150px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  .top {
+    width: 5px;
+    h1 {
+      text-transform: lowercase;
+    }
+    .title {
+      color: var(--black-grey);
+    }
+  }
+
+  .round-time-bar {
+    margin: 1rem;
+    overflow: hidden;
+    width: 3px;
+    background: var(--black);
+  }
+  .round-time-bar div {
+    height: 18em;
+    width: 3px;
+    animation: roundtime calc(3.2s) steps(7);
+    transform-origin: bottom center;
+    background: black;
+  }
+
+  .round-time-bar[data-style="smooth"] div {
+    animation: roundtime calc(3.035s) linear infinite;
+  }
+  @keyframes roundtime {
+    to {
+      /* More performant than `width` */
+      transform: scaleY(0);
+    }
+  }
+}
+
+.sliding {
+  z-index: -1;
+  overflow-x: clip;
+  position: absolute;
+  top: 20%;
+  left: 35%;
+  .diaporama {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    animation: slide 15.5s ease infinite 0s;
+    width: 500%;
+    // margin-top: 10%;
+    // margin-left: 10%;
+    position: relative;
+    .slider {
+      width: 80%;
+     
+    } div{
+      position: absolute;
+      margin-left: 30px;
+      z-index: 5;
+    }
+    
+    h2{
+        position: absolute;
+        font-size: 97.75px;
+        line-height: 97.75px;
+        text-align: left;
+        bottom: 75%;
+        animation: slide 18.5s ease infinite 0s;
+        margin-left: -1%;
+        
+      }
+  }
+  @keyframes slide {
+    0%,
+    12.50%,
+    100% {
+      transform: translate(0, 0);
+    }
+    20%,
+    32.50% {
+      transform: translate(-20%, 0);
+    }
+    40%,
+    52.50% {
+      transform: translate(-40%, 0);
+    }
+    60%,
+    72.50% {
+      transform: translate(-60%, 0);
+    }
+    80%,
+    92.50% {
+      transform: translate(-80%, 0);
+    }
+  }
+}
