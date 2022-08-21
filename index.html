@@ -1,93 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="stylesheet.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <header>
-      <div class="top">
-        <h1>smooth<span class="title">flex</span></h1>
-        <!-- <div class="switch">
-            <img src="" alt="#">
-            <img src="" alt="#">
-        </div> -->
-        <div class="menu">
-          <ion-icon name="menu-outline"></ion-icon>
-          <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-          </ul>
-        </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script
+        type="module"
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+        nomodule
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+        ></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/font/stylesheet.css" />
+        <link rel="stylesheet" href="/css/style.css" />
         
-      </div>
-      <div class="round-time-bar" data-style="smooth" style="--duration: 5">
-        <div></div>
-      </div>
-      <div class="social">
-        <ul>
-          <li><img src="/asset/facebook.png" alt="facebook" width="12%" /></li>
-          <li><img src="/asset/linkedin.png" alt="linkedin" width="12%" /></li>
-          <li>
-            <img src="/asset/instagram.png" alt="instagram" width="12%" />
-          </li>
-          <li><img src="/asset/youtube.png" alt="youtube" width="12%" /></li>
-          <li>
-            <img src="/asset/logo-pinterest.png" alt="pinterest" width="12%" />
-          </li>
-        </ul>
-      </div>
-      l
-    </header>
-    <div class="sliding">
-      <ul class="diaporama">
-        <div><h2>Planika</h2></div>
-        <li>
-          <img class="slider" src="/asset/HEADER_Image1-1500x920.jpg" />
-        </li>
-        <li>
-          <div><h2>Expo</h2></div>
-          <img
-            class="slider"
-            src="/asset/Muraflex_EXPO_Header_image-1500x920.jpg"
-          />
-        </li>
-        <li>
-          <div><h2>Zitto</h2></div>
-          <img
-            class="slider"
-            src="/asset/ZITTO-header-double-glazed-office-pods-1500x920.jpg"
-          />
-        </li>
-        <li>
-          <div><h2>Mimo</h2></div>
-          <img
-            class="slider"
-            src="/asset/MIMO_black_anodized_with_framed_pivot_door_and_ladder_pull_hardware-1500x920.jpg"
-          />
-        </li>
-        <li>
-          <div><h2>Fino</h2></div>
-          <img class="slider" src="/asset/Muraflex_FINO_EandY-1500x920.jpg" />
-        </li>
-      </ul>
-    </div>
-
-    <script src="/js/scrypt.js"></script>
-  </body>
+        <title>Document</title>
+    </head>
+    <body>
+        <nav>
+            <h1>mura<span class="title">flex</span></h1>
+            <div class="menu-btn">
+                <button type="button"><ion-icon name="menu-outline"></ion-icon></button>
+                <div class="menu-status open">
+                    <p>Menu</p>
+                </div>
+                <div class="menu-status close">
+                    <p>Close</p>
+                </div>
+            </div>
+            <div class="social">
+                <ul>
+                    <li><img src="/asset/facebook.png" alt="facebook"/></li>
+                    <li><img src="/asset/linkedin.png" alt="linkedin"/></li>
+                    <li><img src="/asset/instagram.png" alt="instagram"/></li>
+                    <li><img src="/asset/youtube.png" alt="youtube"/></li>
+                    <li><img src="/asset/logo-pinterest.png" alt="pinterest"/></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <header>
+            <div class="slider">
+                <div class="slide active">
+                    <div class="round-time-bar" data-style="smooth"></div>
+                    <div class="picture">
+                        <img src="/asset/ZITTO-header-double-glazed-office-pods-1500x920.jpg"/>
+                    </div>
+                    <div class="content">
+                        <h2>Zitto</h2>
+                        <a href="#">Voir le produit</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="round-time-bar" data-style="smooth"></div>
+                    <div class="picture">
+                        <img src="/asset/MIMO_black_anodized_with_framed_pivot_door_and_ladder_pull_hardware-1500x920.jpg"/>
+                    </div>
+                    <div class="content">
+                        <h2>Mimo</h2>
+                        <a href="#">Voir le produit</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="round-time-bar" data-style="smooth"></div>
+                    <div class="picture">
+                        <img src="/asset/Muraflex_FINO_EandY-1500x920.jpg" />
+                    </div>
+                    <div class="content">
+                        <h2>Fino</h2>
+                        <a href="#">Voir le produit</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="round-time-bar" data-style="smooth"></div>
+                    <div class="picture">
+                        <img src="/asset/Muraflex_QUADRO_Header_image-1500x920.jpg"/>
+                    </div>
+                    <div class="content">
+                        <h2>Quadro</h2>
+                        <a href="#">Voir le produit</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="round-time-bar" data-style="smooth"></div>
+                    <div class="picture">
+                        <img src="/asset/Muraflex_EXPO_Header_image-1500x920.jpg"/>
+                    </div>
+                    <div class="content">
+                        <h2>Expo</h2>
+                        <a href="#">Voir le produit</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="round-time-bar" data-style="smooth"></div>
+                    <div class="picture">
+                        <img src="/asset/HEADER_Image1-1500x920.jpg" />
+                    </div>
+                    <div class="content">
+                        <h2>Planika</h2>
+                        <a href="#">Voir le produit</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="round-time-bar" data-style="smooth"></div>
+                    <div class="picture">
+                        <img src="/asset/Muraflex_ARCO_Image 3 (1)-1500x920.jpg"/>
+                    </div>
+                    <div class="content">
+                        <h2>Arco</h2>
+                        <a href="#">Voir le produit</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="slider-controller">
+            <button type="button" class="prev">
+                <ion-icon name="arrow-back-outline"></ion-icon>
+            </button>
+            <button type="button" class="next">
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+            </button>
+        </div>
+        <script src="/js/scrypt.js"></script>
+    </body>
 </html>
